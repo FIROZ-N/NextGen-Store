@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --bg: #1abc9c;
+    --bg-2: white;
+    --bg-3: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+    background: rgba(26, 188, 156, 0.3);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: darkslateblue;
+}
+
+.page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-position: center;
+    object-fit: center;
+    z-index: 2;
+}
+
+.cnt {
+    display: inline-block;
+}
+
+.quote p {
+    max-width: 800px;
+    font-size: .9rem;
+    padding: 50px;
+    margin-bottom: 20px;
+    background-color: #1abc9cea;
+    border-radius: 8px;
+}
+
+.quote p .span {
+    font-size: .9rem;
+}
+
+.quote p .str {
+    color: white;
+    text-shadow: 0 0 5px black;
+    font-size: 1.7rem !important;
+}
+
+.btn {
+    text-decoration: none;
+    color: #1abc9c;
+    background-color: black;
+    padding: 10px 35px;
+    border-radius: 12px;
+    transition: all ease .7s;
+    font-size: 15px;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.news-letter {
+    padding: 100px 0 100px 0;
+    background-color: #1abc9c;
+}
+
+.news {
+    padding: 4.8px 0 9.6px 0;
+    text-align: center;
+}
+
+.news-heading {
+    font-size: 44px;
+    line-height: 1.4;
+    color: #333;
+}
+
+.news p {
+    font-size: 18px;
+    margin-bottom: 16px;
+    margin-top: 12px;
+    line-height: 1.8;
+}
+
+input[type="email"] {
+    display: inline-block;
+    width: 60%;
+    padding: 18px 36px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    height: 70px;
+    margin-top: 18px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.06);
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 3;
+}
+
+.bt {
+    margin-left: -160px;
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 600;
+    padding: 16px 32px;
+    border-radius: 20px;
+
+    /* Only necessary for .btn */
+    border: none;
+    cursor: pointer;
+    background-color: #48b774;
+    color: #fff;
+}
+
+.sidemenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: #1abc9c;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 999 !important;
+    border-radius: 0 10px 10px 0;
+}
+
+.top {
+    padding-top: 20px;
+}
+
+.sidemenu a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    padding: 15px 0px;
+    text-align: center;
+}
+
+.sidemenu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidemenu a:hover {
+    color: #f1f1f1;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 40px 60px;
+    top: 0px;
+    display: flex;
+    z-index: 22;
+    justify-content: space-between;
+}
+
+.navbar-logo a {
+    text-decoration: none;
+    color: #1abc9c;
+}
+
+.navbar-links a {
+    padding: 0 0 0 20px;
+    color: #1abc9c;
+    transition: all ease .7s;
+}
+
+.navbar-links a:hover {
+    color: grey !important;
+    transition: all ease .7s;
+}
+
+svg {
+    width: 20px;
+    height: fit-content;
+}
+
+a {
+    text-decoration: none;
+}

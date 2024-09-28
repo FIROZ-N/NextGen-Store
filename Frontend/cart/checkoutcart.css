@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --bg: #1abc9c;
+    --bg-2: white;
+    --bg-3: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.empty-cart {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+    padding: 20px;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table thead {
+    background-color: #f4f4f4;
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-table th {
+    color: #333;
+}
+
+.product-image {
+    width: 50px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.card-footer {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.card-footer h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-footer label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.card-footer input[type="text"] {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #e7b7b7;
+    border-radius: 4px;
+    outline: none;
+}
+
+.btn-place-order {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-place-order:hover {
+    background-color: #218838;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card-footer input[type="text"] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-place-order {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}

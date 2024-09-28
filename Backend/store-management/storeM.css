@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    /* Small font size */
+    color: #333;
+    line-height: 1.5;
+    padding: 20px;
+    background-color: #f4f4f4;
+    max-width: 1200px;
+    /* Limit the body width */
+    margin: 0 auto;
+    /* Center the content */
+}
+
+/* Header */
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Product Links */
+.product-link {
+    margin-bottom: 20px;
+    text-align: center;
+    /* Center align the links */
+}
+
+.product-links {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows wrapping on smaller screens */
+    justify-content: center;
+    gap: 10px;
+}
+
+.product-links a {
+    display: inline-block;
+    /* Make links inline-block */
+    text-decoration: none;
+    color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #e9ecef;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.product-links a:hover {
+    background-color: #d6d6d6;
+    color: #0056b3;
+    /* Change color on hover */
+}
+
+/* Forms */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+form h4 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+form .case {
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea,
+form select {
+    outline: none;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+form textarea {
+    resize: none;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Delete All Products Button */
+form button[type="submit"] {
+    background-color: #dc3545;
+    color: #fff;
+    margin-top: 20px;
+}
+
+form button[type="submit"]:hover {
+    background-color: #c82333;
+}
+
+/* Table Container */
+.table-container {
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #dee2e6;
+}
+
+table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+table td img {
+    max-width: 100px;
+    height: auto;
+}
+
+table a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9em;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-links {
+        align-items: center;
+    }
+
+    .product-links a {
+        margin-bottom: 10px;
+    }
+}

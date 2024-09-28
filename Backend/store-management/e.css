@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --bg: #1abc9c;
+    --bg-2: white;
+    --bg-3: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}/* General body styling */
+body {
+    background-color: #f4f4f4; /* Light background color */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main heading style */
+h2 {
+    color: #333; /* Dark color for headings */
+    text-align: center; /* Center the heading */
+}
+
+/* Form container styling */
+form {
+    background-color: #fff; /* White background for form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Inner spacing */
+    max-width: 600px; /* Maximum width for the form */
+    margin: auto; /* Center the form */
+}
+
+/* Input and textarea styling */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Inner padding */
+    margin: 10px 0; /* Spacing around inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* Textarea specific styling */
+textarea {
+    resize: none; /* Prevent resizing of textarea */
+}
+
+/* Button styling */
+button[type="submit"] {
+    background-color: #28a745; /* Green background for submit button */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px 15px; /* Inner spacing */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+button[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Link styling */
+a {
+    text-decoration: none; /* Remove underline */
+    color: #007bff; /* Blue color for links */
+    display: inline-block; /* Make the link inline-block */
+    margin-top: 20px; /* Margin above the link */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    /* Stack items in a single column on smaller screens */
+    form {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    button[type="submit"], a {
+        width: 100%; /* Full width for buttons and links */
+        text-align: center; /* Center text */
+    }
+
+    a {
+        margin-top: 15px; /* Adjust margin for mobile view */
+    }
+}

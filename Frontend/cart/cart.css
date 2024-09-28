@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+} 
+
+/* General body styling */
+body {
+    color: #333;
+    line-height: 1.4;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.cs {
+    text-decoration: none;
+    color: black;
+    font-size: 12px !important;
+}
+
+.cs:hover {
+    font-size: 14px;
+    color: red;
+}
+
+/* Cart Container */
+.cnt {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+td img {
+    width: 50px;
+    /* Adjust as needed */
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Table Container with Fixed Height and Scroll */
+.table-container {
+    max-height: 500px;
+    /* Adjust as needed */
+    overflow-y: auto;
+    /* Enables vertical scrolling */
+}
+
+/* Buttons and Forms */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    margin: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-align: center;
+    background-color: #007bff;
+}
+
+button:hover {
+    opacity: 0.9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button.remove {
+    background-color: #dc3545;
+}
+
+button.update {
+    background-color: #007bff;
+}
+
+button.place-order {
+    background-color: #28a745;
+}
+
+/* Form Styling */
+form {
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .table-container {
+        max-height: 400px;
+        /* Adjust as needed */
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}input {
+    outline: none;
+    padding: 4px 4px;
+}
+
+.table-container {
+    max-width: 1200px;
+    overflow-x: scroll;
+}

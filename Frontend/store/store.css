@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --bg: #1abc9c;
+    --bg-2: white;
+    --bg-3: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: darkslateblue;
+}
+
+::selection {
+    background: rgba(26, 188, 156, 0.3);
+}
+
+.mySlides {
+    display: none;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.product-link {
+    z-index: 99 !important;
+    width: 100%;
+    text-align: center;
+    background-color: #1abc9c;
+}
+
+.product-links {
+    z-index: 99 !important;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+
+.product-links a {
+    color: black;
+    padding: 15px 20px;
+    margin: 10px;
+    /* Add margin to give links more space */
+    text-decoration: none;
+    transition: all ease 0.7s;
+}
+
+.product-links a:hover {
+    color: white;
+    transition: all ease 0.7s;
+}
+
+
+.slideshow-container {
+    position: relative;
+    top: 0px;
+    z-index: -1 !important;
+}
+
+.img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    padding: 20px;
+}
+
+.text {
+    min-width: 320px;
+    z-index: -1 !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 30px 30px;
+    border-radius: 9px;
+    color: black;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px black;
+    /* backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px); */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Ensure the product container is centered and responsive */
+.products {
+    padding: 50px 10px;
+    /* Reduce padding to fit within the viewport */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* Adjust min width as needed */
+    gap: 20px;
+    /* Add spacing between cards */
+    justify-content: center;
+    /* Center the grid items horizontally */
+    align-items: start;
+    /* Align items to the top */
+}
+
+/* Style each product card */
+.product-item {
+    text-align: center;
+    background-color: #fff;
+    /* White background for modern look */
+    padding: 20px;
+    /* Add padding for content */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth hover effects */
+}
+
+/* Change box shadow and scale up on hover */
+.product-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Style the product images */
+.product-item img {
+    max-width: 100%;
+    height: 200px;
+    /* Fixed height for images */
+    object-fit: cover;
+    /* Cover the container without stretching */
+    border-radius: 8px;
+    /* Rounded corners for images */
+    margin-bottom: 15px;
+    /* Space between image and text */
+}
+
+/* Style the product name and other text */
+.product-item h2 {
+    font-size: 1.2rem;
+    /* Adjust font size for title */
+    color: #333;
+    /* Dark text for readability */
+    margin-bottom: 10px;
+    /* Space below title */
+}
+
+.product-item p {
+    color: #666;
+    /* Lighter color for text */
+    padding: 5px 0;
+    /* Padding around text */
+}
+
+/* Style the view button */
+.view-button {
+    display: inline-block;
+    width: 100%;
+    background-color: #1abc9c;
+    /* Matching the theme color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px 0;
+    /* Increase padding for better button appearance */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.view-button:hover {
+    background-color: #17a589;
+    /* Slightly darker color on hover */
+    color: #fff;
+}

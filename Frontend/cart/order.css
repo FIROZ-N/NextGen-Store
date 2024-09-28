@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --bg: #1abc9c;
+    --bg-2: white;
+    --bg-3: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #333;
+    line-height: 1.4;
+    background-color: #f4f4f4;
+    padding: 20px;
+    overflow: auto; /* Ensure the body can scroll if needed */
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Allow horizontal scroll if table overflows */
+}
+
+/* Title styles */
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title p {
+    font-size: 20px;
+    font-weight: bold;
+    color: brown; /* Consistent color */
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow-x: auto; /* Allow horizontal scrolling */
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 14px; /* Smaller font size */
+}
+
+table th {
+    font-size: 10px !important;
+    background-color: burlywood; /* Consistent color */
+    color: brown; /* White text on dark background */
+    font-weight: bold;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+table img {
+    max-width: 50px;
+    height: auto;
+}
+
+/* Form styles within table */
+form {
+    display: flex;
+    gap: 10px;
+}
+
+form select, form input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px; /* Smaller font size */
+}
+
+form button {
+    background-color: #007BFF; /* Consistent color */
+    color: #fff; /* White text */
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px; /* Smaller font size */
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: #0056b3; /* Slightly darker color for hover effect */
+}
+
+/* Message styles */
+p {
+    font-size: 14px; /* Smaller font size */
+    font-weight: bold;
+    color: #007BFF; /* Consistent color */
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    table th, table td {
+        font-size: 12px; /* Smaller font size for mobile */
+        padding: 10px;
+    }
+
+    form select, form input[type="text"] {
+        font-size: 12px; /* Smaller font size */
+        padding: 6px;
+    }
+
+    form button {
+        font-size: 12px; /* Smaller font size */
+        padding: 6px 10px;
+    }
+}
+input {
+    outline: none;
+    padding: 7px 4px;
+}
