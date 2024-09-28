@@ -23,33 +23,36 @@ NextGen is a modern, feature-rich eCommerce platform built with PHP, MySQL, and 
 - **Order Management**: View and update order statuses; send notifications to users.
 - **Content Management**: Customize home page sections, including background images, quotes, and subscription options.
 
+-----------------------------------------------------------------------------------------------------------------------------------
+
 ## Project Structure
-.
-├── Backend
-│   ├── admin
-│   │   ├── admin_login.php
-│   │   ├── adminpanel.php
-│   │   └── ...
-│   ├── user
-│   │   ├── login.php
-│   │   ├── signup.php
-│   │   └── ...
-│   ├── admin-panel
-│   │   ├── getusers.php
-│   │   ├── ...
-│   ├── database
-│   │   ├── db.php
-│   │   └── ...
-│   └── ...
-├── Frontend
-│   ├── home
-│   │   ├── index.php
-│   │   └── ...
-│   ├── css
-│   └── js
-├── Database
-│   ├── gstore.sql
-└── ...
+
+### Backend
+- **Admin:**
+  - `admin_login.php`: Admin login page.
+  - `adminpanel.php`: Admin dashboard for managing users and orders.
+  
+- **User:**
+  - `login.php`: User login page.
+  - `signup.php`: User signup page.
+  - `profile.php`: User profile management.
+
+- **Admin Panel:**
+  - `getusers.php`: Fetch and display user details.
+  
+- **Database:**
+  - `db.php`: Database connection file.
+
+### Frontend
+- **Home:**
+  - `index.php`: Main homepage file.
+  
+- **Assets:**
+  - `css/`: Stylesheets.
+  - `js/`: JavaScript files.
+
+### Database
+- **`gstore.sql`**: SQL file for setting up the database.
 -------------------------------------------------------------------------------------------------------------
 Installation
 -------------------------------------------------------------------------------------------------------------
