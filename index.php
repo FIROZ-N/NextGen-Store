@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['user_id'])) {
-    header("Location: ../../Backend/user/login.php");
+    header("Location: ./Backend/user/login.php");
     exit();
 }
 
@@ -11,7 +11,7 @@ if (isset($_GET['message'])) {
 }
 
 // Fetch user data
-include('../../Backend/database/db.php');
+include('./Backend/database/db.php');
 $user_id = $_SESSION['user_id'];
 $sql = "SELECT * FROM user WHERE id = ?";
 $stmt = $conn->prepare($sql);
@@ -27,7 +27,7 @@ $userData = $stmt->get_result()->fetch_assoc();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NextGen</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./Frontend/home/style.css">
 </head>
 
 <body>
@@ -139,7 +139,7 @@ $userData = $stmt->get_result()->fetch_assoc();
                 <h1 class="news-heading">Subscribe To Get The Latest <br> News About Us</h1>
                 <p class="des how-de">Get the latest news about digital Marketing in your pocket. Drop your <br> email below to get daily updates about us.</p>
 
-                <form action="../home/subscribe.php" method="POST">
+                <form action="../../../Frontend/home/subscribe.php" method="POST">
                     <input style="outline: none;" type="email" name="email" maxlength="50" required placeholder="Enter your email address">
                     <button class="bt" type="submit">Subscribe</button>
                 </form>
@@ -153,8 +153,8 @@ $userData = $stmt->get_result()->fetch_assoc();
         </div>
     </section>
 
-    <?php include './controls/footer.php' ?>
-    <script src="./script.js"></script>
+    <?php include './Frontend/home/controls/footer.php' ?>
+    <script src="./Frontend/home/script.js"></script>
 </body>
 
 </html>

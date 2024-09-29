@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['username'] = $user['username']; // Store username for welcome message
 
             // Redirect to index.php with a welcome message
-            header("Location: ../../Frontend/home/index.php?message=" . urlencode("Welcome, " . $user['username']));
+            header("Location: ../../index.php?message=" . urlencode("Welcome, " . $user['username']));
             exit();
         } else {
             echo "<script>
